@@ -28,7 +28,7 @@ app.use('/api/v1/auth', require('./routes/auth'));
 app.use('/api/v1/inventories', require('./routes/inventories'));
 
 //connect
-mongoose.connect("mongodb://localhost:27017/BT6SangT4");
+mongoose.connect("mongodb://localhost:27017/BT");
 mongoose.connection.on('connected', function () {
   console.log("connected");
 })
